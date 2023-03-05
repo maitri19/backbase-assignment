@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ratings-services:
+    container_name: movies-api-container
+    build:
+      context: ./
+      dockerfile: DockerFile
+    image: movies:latest
+    ports:
+      - "8081:8081"

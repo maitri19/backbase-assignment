@@ -1,0 +1,3 @@
+## Pre-requisites ##
+
+I have provided docker file to run the application in docker container. In case if application needs to be scale up for more rate limit, Application can be configured with container orchestration. While configuring application for high rate limit, we can use mashery/akamai to handle the load. API can also be configured with loadbalancer to distribute load between multiple application containers.   

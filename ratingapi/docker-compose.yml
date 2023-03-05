@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ratings-services:
+    container_name: ratings-container
+    build:
+      context: ./
+      dockerfile: DockerFile
+    image: ratings:latest
+    ports:
+      - "8082:8082"

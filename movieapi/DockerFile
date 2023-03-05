@@ -1,0 +1,4 @@
+FROM openjdk:17-oracle
+EXPOSE 8081
+COPY /target/movies-api-0.0.1-SNAPSHOT.jar /opt/movie-api-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "/opt/movie-api-0.0.1-SNAPSHOT.jar"]
